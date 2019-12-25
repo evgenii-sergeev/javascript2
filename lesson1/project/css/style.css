@@ -1,0 +1,17 @@
+.btn-cart {
+    width: 200px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.product-item__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
