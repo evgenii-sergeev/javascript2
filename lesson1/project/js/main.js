@@ -13,14 +13,14 @@ const renderProduct = (title, price, imgSrc = 'https://via.placeholder.com/150')
             <div class="product-item__description">
             <h3>${title}</h3>
             <p>${price}</p>
-            <button class="by-btn">Добавить в корзину</button>
+            <button class="by-btn">Купить</button>
             </div>
           </div>`;
 };
 
 const renderProducts = list => {
   const productList = list.map(product => renderProduct(product.title, product.price));
-  document.querySelector('.products').innerHTML = productList.join('<br>');
+  document.querySelector('.products').innerHTML = productList.join(' ');
 };
 
 renderProducts(products);
